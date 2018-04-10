@@ -1,6 +1,6 @@
-nums = [2, 11, 8, 15]
-target = 9
-for i in nums:
-    if (target - i) in nums.remove(i):
-        print(nums)
-        print([nums.index(i), nums.index(target - i)])
+nums = [1, 2, 3, 4]
+for i in range(len(nums)):
+    print(nums)
+    print(nums.remove(nums[i]))
+    print('-----------')
+print(nums)
