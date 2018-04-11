@@ -20,5 +20,4 @@ class Solution(object):
                 sum += digits[s[i]]
             else:
                 sum -= digits[s[i]]
-
         return sum
