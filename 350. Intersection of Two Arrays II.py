@@ -22,6 +22,7 @@ class Solution:
         """
         res = []
         for i in nums1:
+            # the number of every intersect should less than the minimal between lists.
             if i in nums2 and res.count(i) != min(nums1.count(i), nums2.count(i)):
                 res.append(i)
         return res
