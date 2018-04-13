@@ -31,4 +31,3 @@ class Solution:
             if res[i] != res[-(i + 1)]:
                 return False
         return True
-
