@@ -20,6 +20,7 @@ class Solution:
         :type n: int
         :rtype: float
         """
+        # This method will be TLE
         # counter = 1
         # element  = x
         # if n == 0 and x != 0:
