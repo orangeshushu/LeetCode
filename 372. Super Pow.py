@@ -28,6 +28,7 @@ class Solution:
         for i in b:
             s = s + str(i)
         number = int(s)
+
         # 快速幂 ：积的取余等于取余的积的取余
         while number > 0:
             if number % 2 == 1:
