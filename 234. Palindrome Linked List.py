@@ -26,6 +26,7 @@ class Solution:
             res.append(head.val)
             head = head.next
         l = len(res)
+
         # is it a palindrome ?
         for i in range(l // 2):
             if res[i] != res[-(i + 1)]:
