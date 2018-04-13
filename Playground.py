@@ -11,3 +11,8 @@ t(a[::-2])
 
 print(sys.maxsize)
 print(2**31)
+class Python:
+    def selfDemo():
+        print('Python,why self?')
+p = Python()
+p.selfDemo()
