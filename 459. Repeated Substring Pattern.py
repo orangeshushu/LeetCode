@@ -17,25 +17,13 @@ Output: True
 
 Explanation: It's the substring "abc" four times. (And the substring "abcabc" twice.)
 '''
-s = "aba"
-a = ''
-# stack = []
-# for element in s:
-#     if len(stack) == 0:
-#         stack.insert(0, element)
-#     elif stack[-1] == element:
-#         stack.pop()
-#     else:
-#         stack.insert(0, element)
-#         print('22222')
-# if len(stack) == 0:
-#     print('True')
-# else:
-#     print('False')
-for i in s[:-1]:
-    a = a + i
-    print(a)
-    if s.count(a) == len(s)/len(a):
-        print(s.count(a), len(s), len(a))
-        print('True')
-print('False')
+# TLE
+# s = "aba"
+# a = ''
+# # for i in s[:-1]:
+# #     a = a + i
+# #     print(a)
+# #     if s.count(a) == len(s)/len(a):
+# #         print(s.count(a), len(s), len(a))
+# #         print('True')
+# # print('False')
