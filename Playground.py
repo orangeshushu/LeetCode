@@ -24,6 +24,27 @@ p.selfDemo()
 # data.sort()
 # bisect.insort
 
-s = 'abc'
-print(s*3)
-
+# s = 'abc'
+# print(s*3)
+N = 857
+ans = 0
+# a = map(int, '11')
+# print(a)
+# for i in a:
+#     print(i)
+# <map object at 0x105b07ba8>
+# <class 'int'>
+# <class 'int'>
+class Solution(object):
+    def rotatedDigits(self, N):
+        """
+        :type N: int
+        :rtype: int
+        """
+        ans = 0
+        for n in range(1, N + 1):
+            nset = set(map(int, str(n)))
+            if any(x in nset for x in (2, 5, 6, 9)):
+                if not any(x in nset for x in (3, 4, 7)):
+                    ans += 1
+        return ans
