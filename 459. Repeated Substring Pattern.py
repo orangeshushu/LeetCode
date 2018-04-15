@@ -27,3 +27,17 @@ Explanation: It's the substring "abc" four times. (And the substring "abcabc" tw
 # #         print(s.count(a), len(s), len(a))
 # #         print('True')
 # # print('False')
+
+class Solution:
+    def repeatedSubstringPattern(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        size = len(s)
+        for x in range(1, size//2 +1):
+            if size % x:
+                continue
+            if s[:x] * (size // x) == s:
+                return True
+        return False

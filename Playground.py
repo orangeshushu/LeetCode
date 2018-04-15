@@ -17,10 +17,13 @@ class Python:
 p = Python()
 p.selfDemo()
 '''
-# letter = 'Abc Ick'
-# print(letter.islower())
-import bisect
-data = [4, 2, 9, 7]
-data.sort()
-bisect.insort
+# # letter = 'Abc Ick'
+# # print(letter.islower())
+# import bisect
+# data = [4, 2, 9, 7]
+# data.sort()
+# bisect.insort
+
+s = 'abc'
+print(s*3)
 
