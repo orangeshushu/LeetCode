@@ -35,16 +35,21 @@ ans = 0
 # <map object at 0x105b07ba8>
 # <class 'int'>
 # <class 'int'>
-class Solution(object):
-    def rotatedDigits(self, N):
+
+print([0]*3)
+class Solution:
+    def climbStairs(self, n):
         """
-        :type N: int
+        :type n: int
         :rtype: int
         """
-        ans = 0
-        for n in range(1, N + 1):
-            nset = set(map(int, str(n)))
-            if any(x in nset for x in (2, 5, 6, 9)):
-                if not any(x in nset for x in (3, 4, 7)):
-                    ans += 1
-        return ans
+        return self.d(n)
+
+    def d(self, a):
+        if a ==1 or a ==2 or a == 0:
+            return a
+        else:
+            return self.d(a - 1) +self.d(a - 2)
+if __name__ == '__main__':
+    s = Solution()
+    print(s.climbStairs(9))
