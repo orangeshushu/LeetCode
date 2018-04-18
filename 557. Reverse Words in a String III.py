@@ -19,5 +19,6 @@ class Solution:
             res = res + self.revers(i) + ' '
         return res[:-1]
 
+    # reverse the substring in the sentence
     def revers(self, l):
         return l[::-1]
