@@ -13,3 +13,22 @@ S string length is in [1, 10000].
 C is a single character, and guaranteed to be in string S.
 All letters in S and C are lowercase.
 '''
+class Solution:
+    def shortestToChar(self, S, C):
+        """
+        :type S: str
+        :type C: str
+        :rtype: List[int]
+        """
+        m = sys.maxsize
+        dic = []
+        res = []
+        for i in range(len(S)):
+            if S[i] == C:
+                dic.append(i)
+        for i in range(len(S)):
+            for j in dic:
+                m = min(abs(i -j), m)
+            res.append(m)
+            m = sys.maxsize
+        return res
