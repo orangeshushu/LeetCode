@@ -10,7 +10,7 @@ s = "loveleetcode",
 return 2.
 Note: You may assume the string contain only lowercase letters.
 '''
-import collec
+import collections
 
 class Solution:
     def firstUniqChar(self, s):
