@@ -67,5 +67,9 @@ ans = 0
 #
 # # Result:
 # [(' ', 54), ('e', 32), ('s', 25), ('a', 24), ('t', 24)]
-print(23/6)
-print(23//6)
+
+from scipy.special import comb
+res = 0
+for i in range(1,26):
+    res += comb(25,i)
+print(res)
