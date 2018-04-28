@@ -15,6 +15,7 @@ class Solution(object):
         :type b: int
         :rtype: int
         """
+
         while b != 0:
             carry = a & b
             a = (a ^ b) % 0x100000000
