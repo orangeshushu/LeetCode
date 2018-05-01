@@ -32,7 +32,6 @@ Notes:
 S contains only uppercase, lowercase and spaces. Exactly one space between each word.
 1 <= S.length <= 100.
 '''
-
 class Solution(object):
     def toGoatLatin(self, S):
         """
