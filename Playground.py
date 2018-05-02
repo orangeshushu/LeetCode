@@ -68,6 +68,9 @@ ans = 0
 # # Result:
 # [(' ', 54), ('e', 32), ('s', 25), ('a', 24), ('t', 24)]
 # 排列组合
+
+
+
 # from scipy.special import comb
 # res = 0
 # for i in range(1,26):
