@@ -22,3 +22,9 @@ class Solution:
                 num = num // 10
             num = temp
         return num
+# or it can be writen as :
+'''
+while num >= 10:
+    num = sum(map(int, str(num)))
+return num
+'''
