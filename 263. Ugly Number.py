@@ -8,7 +8,6 @@ Note:
 1 is typically treated as an ugly number.
 Input is within the 32-bit signed integer range.
 '''
-
 class Solution:
     def isUgly(self, num):
         """
