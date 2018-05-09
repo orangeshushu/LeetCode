@@ -14,7 +14,17 @@ Explanation:
 12 + 02 + 02 = 1
 '''
 
-
-
+class Solution(object):
+    def isHappy(self, n):
+        """
+        :type n: int
+        :rtype: bool
+        """
+        res, s = n, set()
+        while res not in s:
+            s.add(res)
+            res = sum(int(i)**2 for i in list(str(res)))
+            if res in s:
+                return res == 1
 
 
