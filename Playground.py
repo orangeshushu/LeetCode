@@ -74,7 +74,33 @@ ans = 0
 #     res += comb(25,i)
 # print(res)
 
+#
+# num = 38
+# a = map(int,str(num))
+# print(sum(a))
 
-num = 38
-a = map(int,str(num))
-print(sum(a))
+class Solution(object):
+    def longestWord(self, words):
+        """
+        :type words: List[str]
+        :rtype: str
+        """
+        while len(words) > 0:
+            a = max(words)
+            print(a)
+            print(self.isright(a, words))
+            if self.isright(a, words):
+                return a
+            else:
+                words.remove(a)
+
+    def isright(self, w, s):
+        for i in range(len(w)):
+            if w[0:(i+1)] not in s:
+                return False
+        return True
+if __name__ == '__main__':
+    s = Solution()
+    words = ["b","br","bre","brea","break","breakf","breakfa","breakfas","breakfast","l","lu","lun","lunc","lunch","d","di","din","dinn","dinne","dinner"]
+    answer = s.longestWord(words)
+    print(answer)
