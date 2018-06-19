@@ -105,6 +105,8 @@
 #     answer = s.longestWord(words)
 #     print(answer)
 
-S = 'abc'
-S.replace(0,'d')
-print(S)
+for i in range(5):
+    j = i + 1
+    for j in range(j, 5):
+        print(i, j)
+
