@@ -105,8 +105,36 @@
 #     answer = s.longestWord(words)
 #     print(answer)
 
-for i in range(5):
-    j = i + 1
-    for j in range(j, 5):
-        print(i, j)
 
+# theString = 'saaaay yes no yaaaass'
+# print(theString.strip('yas'))
+# class Solution:
+#     def largestNumber(self, num):
+#         num = sorted([str(x) for x in num], cmp=self.compare)
+#         ans = ''.join(num).lstrip('0')
+#         return ans or '0'
+#
+#
+#     def compare(self, a, b):
+#         return [1, -1][a + b > b + a]
+#
+# if __name__ == '__main__':
+#     num = [3, 30, 34, 5, 9]
+#     s =Solution()
+#     answer =  s.largestNumber(num)
+#     print(answer)
+from collections import Counter
+s= "cbaebabacd"
+p= "abc"
+res = []
+pCounter = Counter(p)
+sCounter = Counter(s[:len(p) - 1])
+print(sCounter[s[3]])
+for i in range(len(p) - 1, len(s)):
+    sCounter[s[i]] += 1  # include a new char in the window
+    if sCounter == pCounter:  # This step is O(1), since there are at most 26 English letters
+        res.append(i - len(p) + 1)  # append the starting index
+    sCounter[s[i - len(p) + 1]] -= 1  # decrease the count of oldest char in the window
+    if sCounter[s[i - len(p) + 1]] == 0:
+        del sCounter[s[i - len(p) + 1]]  # remove the count if it is 0
+print(res)
