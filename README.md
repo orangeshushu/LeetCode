@@ -1,6 +1,5 @@
 # LeetCode
 
-Haapy New year!
 
 This is my answer of Leetcode, most of them written by Python method.
 
