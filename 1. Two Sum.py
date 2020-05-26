@@ -32,3 +32,4 @@ class Solution:
         #         return [i, nums.index(target - nums[i])]
 
         # Method  3
+        # try to upadate
