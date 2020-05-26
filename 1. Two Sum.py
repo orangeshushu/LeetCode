@@ -30,3 +30,5 @@ class Solution:
         #         if nums[i] == target - nums[i] and i == nums.index(target - nums[i]):
         #             continue
         #         return [i, nums.index(target - nums[i])]
+
+        # Method 3
