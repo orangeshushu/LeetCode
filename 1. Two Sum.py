@@ -31,4 +31,4 @@ class Solution:
         #             continue
         #         return [i, nums.index(target - nums[i])]
 
-        # Method 3
+        # Method  3
